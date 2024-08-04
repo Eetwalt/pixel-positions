@@ -5,6 +5,8 @@ use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\TagController;
+use App\Livewire\Counter;
+use App\Livewire\Todos;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [JobController::class, 'index']);
@@ -25,3 +27,6 @@ Route::middleware('guest')->group(function () {
 
 
 Route::delete('/logout', [SessionController::class, 'destroy'])->middleware('auth');
+
+Route::get('/todos', Todos::class);
+Route::get('/counter', Counter::class);
