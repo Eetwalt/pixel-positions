@@ -8,10 +8,6 @@
             </x-forms.form>
         </section>
 
-        <section>
-            <livewire:todos />
-        </section>
-
         <section class="pt-10">
             <x-section-heading>Top Jobs</x-section-heading>
 

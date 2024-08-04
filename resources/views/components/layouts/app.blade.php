@@ -48,6 +48,9 @@
         </nav>
 
         <main class="mt-10 max-w-[986px] mx-auto">
+            <p>Livewire pages:</p>
+            <x-nav-link href="/todos" :active="request()->is('/todos')">Todos</x-nav-link>
+            <x-nav-link href="/counter" :active="request()->is('/counter')">Counter</x-nav-link>
             {{ $slot }}
         </main>
     </div>
